@@ -1,0 +1,15 @@
+#imgs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#imgs div{
+    flex: 1 1 auto;
+    max-width: 500px;
+    min-width: 100px;
+}
+#imgs div video{
+    width: 100%;
+}

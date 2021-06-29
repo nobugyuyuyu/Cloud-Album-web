@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/font/iconfont.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- 放置一个脱离文档流的div放大图 -->
+    <div id="bigImg">
+        <div class="container">
+            <span class="iconfont icon-guanbi"></span>
+            <span id="pre" class="iconfont icon-changyongicon--copy pre"></span>
+            <span id="next" class="iconfont icon-changyongicon- next"></span>
+        </div>
+    </div>
+
+    <div id="air">   
+        <button id="favorite" title="移出最喜欢"><span class="iconfont icon-aixin"></span></button>
+        <button id="bin" title="移动到回收站"><span class="iconfont icon-shanchu"></span></button>
+        <button id="private" title="设为私密"><span class="iconfont icon-lock"></span></button>
+        <button id="vedio" title="制作精彩瞬间"><span class="iconfont icon-jianji"></span></button>
+    </div>
+
+    <div class="box">
+        <div class="nav">
+            <div class="title">
+                <span class="iconfont icon-jinbi"></span>
+                <span class="text">鑫相册</span>
+            </div>
+            <ul id="items">
+                <li>
+                    <a href="./index.html"  class="clearfix">
+                        <span class="iconfont left icon-iconset0157"></span>
+                        <span class="text">搜索</span>
+                        <span class="text  right" id="sum"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./album.html"  class="clearfix">
+                        <span class="iconfont left icon-xiangce"></span>
+                        <span class="text">相册</span>
+                        <span class="text  right" id="album"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./favorite.html"  class="clearfix">
+                        <span class="iconfont left icon-aixin"></span>
+                        <span class="text">最喜欢</span>
+                        <span class="text  right" id="favorite"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./time.html"  class="clearfix">
+                        <span class="iconfont left icon-jianji"></span>
+                        <span class="text">精彩瞬间</span>
+                        <span class="text  right" id="time"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./private.html"  class="clearfix">
+                        <span class="iconfont left icon-lock"></span>
+                        <span class="text">私密</span>
+                        <span class="text  right" id="private"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./bin.html"  class="clearfix">
+                        <span class="iconfont left icon-shanchu"></span>
+                        <span class="text">回收站</span>
+                        <span class="text  right" id="shanchu"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./setting.html"  class="clearfix">
+                        <span class="iconfont left icon-shezhi"></span>
+                        <span class="text">设置</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="search clearfix">
+                    <div class="searchIcon left">
+                        <span class="iconfont icon-iconset0157"></span>
+                        <input type="text" placeholder="搜索" id="searchImg">
+                    </div>
+                    <div class="edit right">
+                        <button id="update">
+                            <span class="iconfont icon-shuaxin" title="刷新"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="show">
+                    <ul id="imgs">
+                        <!-- 放置图片 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/favorite.js"></script>
+</body>
+</html>

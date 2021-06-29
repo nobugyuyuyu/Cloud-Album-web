@@ -1,0 +1,300 @@
+/* 通用样式 */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "华文楷体";
+    color: #fff;
+    white-space: nowrap;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+.box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+/* 导航栏 */
+.nav{
+    width: 250px;
+    height: 100%;
+    flex: 0 0 auto;
+    background-color: #212121;
+    text-align: center;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+/* 导航栏头部样式 */
+.nav .title{
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+}
+.nav .title .icon-jinbi{
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #F5B200;
+    margin: 0 10px;
+    line-height: 70px;
+}
+.nav .title .text{
+    font-size: 30px;
+    margin: 0 10px;
+    line-height: 70px;
+}
+/* 导航栏列表样式 */
+#items li a{
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+#items li a .iconfont{
+    font-size: 30px;
+}
+#items li a span{
+    margin: 0 10px;
+}
+#items li a span:nth-of-type(2){
+    float: left;
+    margin-left: 30px;
+}
+#items li a span:nth-of-type(3){
+    margin: 0;
+    margin-right: 20px;
+}
+#items li:hover{
+    background-color: rgba(0, 0, 0,0.6);
+}
+#items li.active a{
+    color: #F5B200;
+    background-color: rgba(0, 0, 0,0.6);
+}
+
+
+/* 右侧相片 */
+.container{
+    flex: 1;
+    overflow: auto;
+}
+.content{
+    width: 100%;
+    background-color: #fff;
+}
+/* 顶部搜索框 */
+.content .search{
+    height: 70px;
+    min-width: 220px;
+    background-color: #f0cb68;
+    line-height: 70px;
+}
+.content .search .searchIcon{
+    margin-left: 20px;
+}
+.content .search .searchIcon .icon-iconset0157{
+    font-size: 20px;
+    color: #575757;
+}
+.content .search .searchIcon input{
+    outline: none;
+    border: none;
+    background-color: #f0cb68;
+    border-bottom: 1px solid #6E6E6E;
+    width: 400px;
+    font-size: 20px;
+}
+.content .search .searchIcon input:focus{
+    border-bottom: 1px solid #000000;
+}
+.content .search .edit button{
+    background-color: #f0cb68;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.content .search .edit button:hover{
+    background-color: rgb(224, 173, 33);
+}
+.content .search .edit button span{
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+}
+#file span{
+    position: relative;
+    width: 40px;
+    overflow: hidden;
+}
+#file #upload{
+    position: absolute;
+    left: -10px;
+    width: 40px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/* 媒体查询自适应 */
+@media screen and (max-width: 840px){
+    .nav{
+        width: 100px;
+    }
+    .nav .text{
+        display: none;
+    }
+    #items li a span:nth-of-type(1){
+        float: none;
+        text-align: center;
+    }
+    .content .search .searchIcon input{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 600px){
+    .content .search .searchIcon input{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 490px){
+    .content .search .searchIcon input{
+        width: 100px;
+    }
+}
+
+
+
+ /* 弹出大图的样式 */
+ #bigImg{
+    position: absolute;
+    width:100vw;
+    height: 100%;
+    min-height: 608px;
+    background-color: rgba(0, 0, 0,0.8);
+    z-index: 10;
+    display: none;
+}
+#bigImg .container{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    min-height: 608px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+#bigImg .container .iconfont{
+    font-size: 30px;
+    position: absolute;
+    color: rgba(255, 255, 255,0.5); 
+    padding: 10px;
+}
+#bigImg .container .iconfont:hover{
+    color: rgba(255, 255, 255,1); 
+    background-color: #f0cb68;
+    border-radius: 50%;
+}
+#bigImg .container .icon-guanbi{
+    right: 0;
+    top: 20px;
+}
+#bigImg .container .pre{
+    left: 0;
+    top: 50%;
+}
+#bigImg .container .next{
+    right: 0;
+    top: 50%;
+}
+#bigImg .container .yuan{
+    position: absolute;
+    right: 100px;
+    top: 20px;
+}
+#bigImg .container img{
+    position: absolute;
+    max-width: 70%;
+    max-height: 80%;
+    background-color: brown;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+/* 悬浮球 */
+#air{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 5;
+    width: 40px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+}
+#air button{
+    background: none;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(224, 173, 33);
+    opacity: 0.9;
+}
+#air button span.iconfont{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+}
+#air #favorite{
+    background-color: rgb(255, 204, 204);
+}
+#air #bin{
+    background-color:#18dcff
+}
+#air #vedio{
+    background-color:#cd84f1
+}
+#air #private{
+    background-color:#3ae374
+}
+
+#air button:hover{
+    opacity: 1;
+}
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册/登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+<div class="container right-panel-active">
+    <!-- 注册 -->
+    <div class="container_form container--signup">
+        <form action="./login.html" class="form" id="form1">
+            <h2 class="form_title">注册</h2>
+            <input type="text" placeholder="用户名" class="input username" autocomplete="off"/>
+            <input type="password" placeholder="密码" class="input password" autocomplete="off"/>
+            <input type="password" placeholder="确认密码" class="input" autocomplete="off"/>
+            <button class="btn" id="register">注册</button>
+        </form>
+    </div>
+
+    <!-- 登录 -->
+    <div class="container_form container--signin">
+        <form action="#" class="form" id="form2">
+            <h2 class="form_title">登陆</h2>
+            <input type="text" placeholder="用户名" class="input username" autocomplete="off"/>
+            <input type="password" placeholder="密码" class="input password" autocomplete="off"/>
+            <button class="btn" id="loginbtn">登陆</button>
+        </form>
+    </div>
+
+    <!-- 浮层 -->
+    <div class="container_overlay">
+        <div class="overlay">
+            <div class="overlay_panel overlay--left">
+                <button class="btn" id="signIn">登陆</button>
+            </div>
+            <div class="overlay_panel overlay--right">
+                <button class="btn" id="signUp">注册</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 背景 -->
+<div class="slidershow">
+    <div class="slidershow--image" style="background-image: url('https://images.unsplash.com/photo-1518803777327-5a904af70f7c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG9yYW5nZSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')"></div>
+    <div class="slidershow--image" style="background-image: url('https://images.unsplash.com/photo-1624704765333-8e964529079d?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')"></div>
+    <div class="slidershow--image" style="background-image: url('https://images.unsplash.com/photo-1540331547168-8b63109225b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b3JhbmdlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')"></div>
+    <div class="slidershow--image" style="background-image: url('https://images.unsplash.com/photo-1469503938793-ef4b8efdd244?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG9yYW5nZSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')"></div>
+</div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>
